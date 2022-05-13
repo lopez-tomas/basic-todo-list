@@ -1,21 +1,36 @@
+@use './modules/colors'
+
 .ToDo
   display: flex
-  border: 1px solid black
-  border-radius: 8px
   margin-bottom: 16px
+  border: 1px solid colors.$white
+  border-radius: 8px
 
   .ToDo-info
     width: 90%
-    border-right: 1px solid black
+    padding: 0 16px 0 16px
+    background-color: colors.$primary-background
+    border: 1px solid colors.$primary-background
+    border-bottom-left-radius: 8px
+    border-top-left-radius: 8px
+
+    h2
+      color: colors.$primary-color
+    p
+      color: colors.$white
 
   .ToDo-remove
     display: flex
     justify-content: center
     align-items: center
     width: 10%
+    background-color: colors.$secondary-background
+    margin: 1px solid colors.$tertiary-color
     cursor: pointer
 
-    &:hover
-      background-color: grey
     span
-      color: red
+      font-weight: bold
+      color: colors.$primary-color
+
+    &:hover
+      background-color: colors.$tertiary-color
