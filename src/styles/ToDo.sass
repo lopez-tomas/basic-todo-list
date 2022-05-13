@@ -2,19 +2,23 @@
 
 .ToDo
   display: flex
+  width: 90%
+  min-width: 300px
+  width: 670px
   margin-bottom: 16px
-  border: 1px solid colors.$white
-  border-radius: 8px
 
   .ToDo-info
-    width: 90%
-    padding: 0 16px 0 16px
+    width: 93%
+    padding: 0 16px
     background-color: colors.$primary-background
-    border: 1px solid colors.$primary-background
+    border: 1px solid colors.$white
     border-bottom-left-radius: 8px
     border-top-left-radius: 8px
+    overflow-wrap: break-word
+    word-wrap: break-word
 
     h2
+      font-size: 1.2rem
       color: colors.$primary-color
     p
       color: colors.$white
@@ -23,9 +27,12 @@
     display: flex
     justify-content: center
     align-items: center
-    width: 10%
-    background-color: colors.$secondary-background
+    width: 7%
+    min-width: 35px
     margin: 1px solid colors.$tertiary-color
+    background-color: colors.$secondary-background
+    border: 1px solid colors.$white
+    border-left: 0
     cursor: pointer
 
     span
