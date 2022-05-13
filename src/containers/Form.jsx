@@ -12,7 +12,7 @@ const Form = () => {
     formData.set('todo', "");
 
     const data = {
-      id: state.todos.length + 1,
+      id: state.lastId,
       todo: todo,
     }
     if (todo !== "") {

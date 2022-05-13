@@ -7,15 +7,13 @@ const ToDo = ({ todo }) => {
 
   const handleClick = id => {
     removeToDo(id);
+    console.log(`TO DO with ID#${id} removed`);
   }
 
   return (
     <li className="ToDo">
       <div className="ToDo-info">
         <h2>{todo.todo}</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adip  incididunt ut labore et dolor sit amet... (to be implemented)
-        </p>
       </div>
       <div className="ToDo-remove" onClick={() => handleClick(todo.id)}>
         <span>

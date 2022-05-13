@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import ToDo from '../components/ToDo';
 import AppContext from '../context/AppContext';
+import '../styles/ToDoList.sass';
 
 const ToDoList = () => {
   const { state } = useContext(AppContext);
