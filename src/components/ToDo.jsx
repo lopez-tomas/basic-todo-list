@@ -17,8 +17,8 @@ const ToDo = ({ todo }) => {
           Lorem ipsum dolor sit amet, consectetur adip  incididunt ut labore et dolor sit amet... (to be implemented)
         </p>
       </div>
-      <div className="ToDo-remove">
-        <span onClick={() => handleClick(todo.id)}>
+      <div className="ToDo-remove" onClick={() => handleClick(todo.id)}>
+        <span>
           X
         </span>
       </div>
