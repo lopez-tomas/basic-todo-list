@@ -10,8 +10,8 @@
   .ToDo-info
     width: 93%
     padding: 0 16px
-    background-color: colors.$primary-background
-    border: 1px solid colors.$white
+    background-color: colors.$secondary-color
+    border: 1px solid colors.$black
     border-bottom-left-radius: 8px
     border-top-left-radius: 8px
     overflow-wrap: break-word
@@ -19,9 +19,8 @@
 
     h2
       font-size: 1.2rem
-      color: colors.$primary-color
-    p
       color: colors.$white
+      font-weight: normal
 
   .ToDo-remove
     display: flex
@@ -29,15 +28,16 @@
     align-items: center
     width: 7%
     min-width: 35px
-    margin: 1px solid colors.$tertiary-color
-    background-color: colors.$secondary-background
-    border: 1px solid colors.$white
+    background-color: colors.$tertiary-color
+    border: 1px solid colors.$black
     border-left: 0
     cursor: pointer
 
     span
       font-weight: bold
-      color: colors.$primary-color
+      color: colors.$white
 
     &:hover
-      background-color: colors.$tertiary-color
+      background-color: tomato
+      span
+        color: colors.$black

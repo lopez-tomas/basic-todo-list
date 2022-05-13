@@ -5,6 +5,13 @@ body
 	margin: 0
 	font-family: monospace
 	line-height: 1.5rem
+	color: colors.$white
+	background-color: colors.$black
+
+	#root
+		position: relative
+		padding-bottom: 3rem
+		min-height: 93vh
 
 ul
 	margin: 0
@@ -12,27 +19,34 @@ ul
 
 	li
 		list-style: none
+
+a
+	text-decoration: none
+	color: colors.$tertiary-color
 /* global styles END */
 
 .App
 	display: flex
-	height: 100%
+	background-color: colors.$black
 
 	.Form-container, .ToDoList-container
 		display: flex
 		flex-direction: column
 		align-items: center
+		min-height: 104px
 		height: 100%
 		width: 50vw
 
 	.Form-container
 		position: sticky
 		top: 0
-		background-color: #ccc
+		color: colors.$white
+		background-color: colors.$tertiary-color
 
 	.ToDoList-container
-		color: colors.$white
-		background-color: colors.$primary-background
+		color: colors.$black
+		background-color: colors.$primary-color
+		border-left: 1px solid colors.$black
 
 		h1
 			font-size: 2rem
