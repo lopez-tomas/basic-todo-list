@@ -1,19 +1,34 @@
+/* global styles START */
 body
 	margin: 0
+
+ul
+	margin: 0
+	padding: 0
+
+	li
+		padding: 0 0 0 16px
+		list-style: none
+/* global styles END */
 
 .App
 	display: flex
 	height: 100%
 
-	.form-container, .todos-container
+	.Form-container, .ToDoList-container
 		display: flex
 		flex-direction: column
+		align-items: center
 		height: 100%
 		width: 50vw
 
-	.form-container
+	.Form-container
 		position: sticky
 		top: 0
 		background-color: #ccc
-	.todos-container
+
+	.ToDoList-container
 		border: 1px solid red
+
+		h1
+			text-align: center
