@@ -4,6 +4,7 @@ import useInitialState from './hooks/useInitialState';
 import Header from './components/Header';
 import Form from './containers/Form';
 import ToDoList from './containers/ToDoList';
+import Footer from './components/Footer';
 import './styles/App.sass';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <ToDoList />
         </section>
       </main>
+      <Footer />
     </AppContext.Provider>
   );
 }
