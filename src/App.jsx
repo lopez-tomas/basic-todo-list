@@ -13,11 +13,11 @@ function App() {
     <AppContext.Provider value={initialState}>
       <Header />
       <main className="App">
-        <section className="form-container">
+        <section className="Form-container">
           <h1>Create your TO DOs!</h1>
           <Form/>
         </section>
-        <section className="todos-container">
+        <section className="ToDoList-container">
           <h1>TO DO List</h1>
           <ToDoList />
         </section>

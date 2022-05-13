@@ -22,18 +22,19 @@ const Form = () => {
 	}
 
   return (
-    <form action="/" className="form" ref={form}>
+    <form action="/" className="Form" ref={form}>
       <div>
-        <label className="label todo-label" htmlFor="todo">TO DO: </label>
+        <label className="label todo-label" htmlFor="todo">TO DO:</label>
         <input
           className="input todo-input"
-          type="text" name="todo"
+          type="text"
+          name="todo"
           placeholder="Buy apples & bananas"
           required
         />
       </div>
       <input
-        className="create-todo-button"
+        className="btn primary-btn create-todo-btn"
         type="submit"
         value="Create TO DO"
         onClick={handleSubmit}

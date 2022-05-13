@@ -6,7 +6,7 @@ const ToDoList = () => {
   const { state } = useContext(AppContext);
 
   return (
-    <ul className="todos">
+    <ul className="ToDoList">
       {state.todos.map(todo => (
         <ToDo key={todo.id} todo={todo} />
       ))}
