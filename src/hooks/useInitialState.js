@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 const initialState = {
   todos: [],
+  lastId: 1
 };
 
 const useInitialState = () => {
@@ -10,7 +11,8 @@ const useInitialState = () => {
   const createToDo = (payload) => {
     setState({
       ...state,
-      todos: [...state.todos, payload]
+      todos: [...state.todos, payload],
+      lastId: state.lastId + 1
     });
   };
 
