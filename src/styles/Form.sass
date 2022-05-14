@@ -1,0 +1,23 @@
+@use './modules/colors'
+
+.Form
+  display: flex
+
+  .todo-input
+    height: 2rem
+    border-top-left-radius: 8px
+    border-bottom-left-radius: 8px
+
+  .primary-btn
+    font-size: 1rem
+    color: colors.$white
+    background-color: colors.$primary-color
+    border-width: 1px
+    border-style: none
+    border-color: colors.$primary-color
+    border-top-right-radius: 8px
+    border-bottom-right-radius: 8px
+
+    &:hover
+      color: colors.$black
+      background-color: colors.$secondary-color

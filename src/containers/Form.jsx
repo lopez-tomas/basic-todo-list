@@ -1,5 +1,6 @@
 import React, { useContext, useRef } from 'react';
 import AppContext from '../context/AppContext';
+import '../styles/Form.sass';
 
 const Form = () => {
   const { state, createToDo } = useContext(AppContext);
@@ -23,20 +24,17 @@ const Form = () => {
 
   return (
     <form action="/" className="Form" ref={form}>
-      <div>
-        <label className="label todo-label" htmlFor="todo">TO DO:</label>
-        <input
-          className="input todo-input"
-          type="text"
-          name="todo"
-          placeholder="Buy apples & bananas"
-          required
-        />
-      </div>
       <input
-        className="btn primary-btn create-todo-btn"
+        className="input todo-input"
+        type="text"
+        name="todo"
+        placeholder="Buy apples & bananas"
+        required
+      />
+      <input
+        className="btn primary-btn"
         type="submit"
-        value="Create TO DO"
+        value="Create"
         onClick={handleSubmit}
       />
     </form>
