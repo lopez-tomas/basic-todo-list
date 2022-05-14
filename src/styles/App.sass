@@ -27,6 +27,7 @@ a
 
 .App
 	display: flex
+	flex-direction: row
 	background-color: colors.$black
 
 	.Form-container, .ToDoList-container
@@ -51,3 +52,13 @@ a
 		h1
 			font-size: 2rem
 			text-align: center
+
+@media (max-width: 740px)
+	body
+		#root
+			min-height: 90vh
+	.App
+		flex-direction: column
+
+		.Form-container, .ToDoList-container
+			width: 100vw
