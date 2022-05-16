@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ToDo = () => {
+const ToDo = ({ todo }) => {
   return (
     <li className="ToDo">
-      test
+      {todo.todo}
     </li>
   )
 }
