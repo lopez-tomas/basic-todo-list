@@ -29,10 +29,30 @@ const useInitialSte = () => {
     });
   }
 
+  const completeAll = () => {
+    let mapped = state.todos.map(todo => ({...todo, completed: true}))
+
+    setState({
+      ...state,
+      todos: [...mapped]
+    })
+  }
+
+  const uncompleteAll = () => {
+    let mapped = state.todos.map(todo => ({...todo, completed: false}))
+
+    setState({
+      ...state,
+      todos: [...mapped]
+    })
+  }
+
   return {
     state,
     createToDo,
-    changeToDoStatus
+    changeToDoStatus,
+    completeAll,
+    uncompleteAll
   }
 };
 
