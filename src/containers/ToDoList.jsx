@@ -1,12 +1,13 @@
 import React from 'react';
+import ToDo from '../components/ToDo';
 
 const ToDoList = () => {
   return (
     <ul>
-      <li>test</li>
-      <li>test</li>
-      <li>test</li>
-      <li>test</li>
+      <ToDo />
+      <ToDo />
+      <ToDo />
+      <ToDo />
     </ul>
   )
 }
