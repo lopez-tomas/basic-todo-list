@@ -16,17 +16,23 @@ const useInitialSte = () => {
     });
   };
 
-  const removeToDo = (id) => {
+  const changeToDoStatus = (id) => {
+    let mapped = state.todos.map(todo => {
+      return todo.id === id
+        ? {...todo, completed: !todo.completed}
+        : {...todo};
+    });
+
     setState({
       ...state,
-      todos: state.todos.filter(todo => todo.id !== id),
+      todos: [...mapped]
     });
-  };
+  }
 
   return {
     state,
     createToDo,
-    removeToDo,
+    changeToDoStatus
   }
 };
 
