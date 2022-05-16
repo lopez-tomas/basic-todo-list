@@ -14,6 +14,7 @@ const Form = () => {
     const data = {
       id: state.lastId,
       todo: todo,
+      completed: false,
     }
     if (todo !== "") {
       createToDo(data);
